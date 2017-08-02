@@ -7,7 +7,7 @@ RUN apt-get update \
 		apache2 \
 	&& rm -r /var/lib/apt/lists/*
 
-RUN echo "*Hello World !!!!!!*" >/var/www/html/index.html
+RUN echo "*Hello World !!!!!!***********" >/var/www/html/index.html
 # Default command	
 CMD ["apachectl", "-D", "FOREGROUND"]
 #CMD /etc/init.d/apache2 start
